@@ -39,6 +39,8 @@ location ^~/k2/files {
     fancyindex_exact_size off;
     fancyindex_header "/theme/header.html";
     fancyindex_footer "/theme/footer.html";
+    fancyindex_ignore "HEADER.md";
+    fancyindex_ignore "README.md";
 }
 
 ```
@@ -54,5 +56,5 @@ then when you navigate to `https://www.yoursize.com/example/sub` you can have a 
 
 ## Customized the footer
 
-At the bottom there is a line with smaller characters saying that "This page is maintain by ....", you can change this line to your own style.
+At the bottom there is a line with smaller characters saying that "This page is maintained by ....", you can change this line to your own style.
 Open footer.html with any editor and change the content in `<footer> ... </footer>`.
